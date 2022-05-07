@@ -1,16 +1,16 @@
 import logging
 from logging.config import dictConfig
-from log_config import log_config # this is your local file
+from src.log_config import log_config # this is your local file
 
 from pydantic import BaseModel
 
 from transformers import pipeline
 
+from fastapi import FastAPI
+
 logging.config.dictConfig(log_config)
 
 logger = logging.getLogger("reddit-broker-bot") # name of logger in loggers dict
-
-from fastapi import FastAPI
 
 app = FastAPI()
 
