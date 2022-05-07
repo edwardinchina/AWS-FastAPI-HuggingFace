@@ -1,6 +1,6 @@
 import logging
 from logging.config import dictConfig
-from src.log_config import log_config # this is your local file
+from log_config import log_config # this is your local file
 
 from pydantic import BaseModel
 
